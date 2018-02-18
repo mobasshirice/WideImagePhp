@@ -1,45 +1,45 @@
-# WideImagePhp
+# WideImage Php
 I have modified some code of wide image lib.
 Uses
 -------
-background code
-$bg = imagecolorallocatealpha($image->getHandle(), 0, 0, 0, 70);
-here rgb=0,0,0
-transparent=70
-uses $bg
-$canvas->useFont('lib/fonts/Vera.ttf', 30, $image->allocateColor(255, 255, 255),$bg);
-we can use wordwrap method for new line 
-$wrappedtext = wordwrap('I am mobasshir ahmad background image testing background', 20, "\n");
+background code <br />
+$bg = imagecolorallocatealpha($image->getHandle(), 0, 0, 0, 70); <br />
+here rgb=0,0,0 <br />
+transparent=70 <br />
+uses $bg <br />
+$canvas->useFont('lib/fonts/Vera.ttf', 30, $image->allocateColor(255, 255, 255),$bg); <br />
+we can use wordwrap method for new line  <br />
+$wrappedtext = wordwrap('I am mobasshir ahmad background image testing background', 20, "\n"); <br />
 
-code->
+code-> <br />
 
-$canvas->writeText('center', 'center', $wrappedtext,0);
-
-
-
-final code lookes like->
-<?php
-
-include("lib/WideImage.php");
-
-$randomImage = '186feed0-c60e-4d52-a17e-5bf350e22991.jpg';
-$image = WideImage::load($randomImage);
-
-$canvas = $image->getCanvas();
-
-$bg = imagecolorallocatealpha($image->getHandle(), 0, 0, 0, 70);
-
-$canvas->useFont('lib/fonts/Vera.ttf', 30, $image->allocateColor(255, 255, 255),$bg);
-//new line based on 20. you can increase and decrease here
-$wrappedtext = wordwrap('I am mobasshir ahmad background image testing background', 20, "\n");
+$canvas->writeText('center', 'center', $wrappedtext,0); <br />
 
 
-$canvas->writeText('center', 'center', $wrappedtext,0);
+
+final code lookes like-> <br />
+<?php <br />
+
+include("lib/WideImage.php"); <br />
+
+$randomImage = '186feed0-c60e-4d52-a17e-5bf350e22991.jpg'; <br />
+$image = WideImage::load($randomImage); <br />
+
+$canvas = $image->getCanvas(); <br />
+
+$bg = imagecolorallocatealpha($image->getHandle(), 0, 0, 0, 70); <br />
+
+$canvas->useFont('lib/fonts/Vera.ttf', 30, $image->allocateColor(255, 255, 255),$bg); <br />
+//new line based on 20. you can increase and decrease here <br />
+$wrappedtext = wordwrap('I am mobasshir ahmad background image testing background', 20, "\n"); <br />
 
 
-$newimg = 'output.jpg';
+$canvas->writeText('center', 'center', $wrappedtext,0); <br />
 
-$image->saveToFile($newimg);
+
+$newimg = 'output.jpg'; <br />
+
+$image->saveToFile($newimg);<br />
 
 
 ?>
