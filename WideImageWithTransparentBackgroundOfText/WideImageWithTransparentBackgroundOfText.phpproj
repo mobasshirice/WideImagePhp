@@ -1,0 +1,91 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>PHPWebProject1</Name>
+    <ProjectGuid>470a2c84-a990-4d8f-9a80-47c48baae714</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>PHPWebProject1</AssemblyName>
+    <SpecificPageValue>index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="index.php" />
+    <Compile Include="lib\Canvas.php" />
+    <Compile Include="lib\Coordinate.php" />
+    <Compile Include="lib\Exception.php" />
+    <Compile Include="lib\Font\GDF.php" />
+    <Compile Include="lib\Font\PS.php" />
+    <Compile Include="lib\Font\TTF.php" />
+    <Compile Include="lib\Image.php" />
+    <Compile Include="lib\MapperFactory.php" />
+    <Compile Include="lib\Mapper\BMP.php" />
+    <Compile Include="lib\Mapper\GD.php" />
+    <Compile Include="lib\Mapper\GD2.php" />
+    <Compile Include="lib\Mapper\GIF.php" />
+    <Compile Include="lib\Mapper\JPEG.php" />
+    <Compile Include="lib\Mapper\PNG.php" />
+    <Compile Include="lib\Mapper\TGA.php" />
+    <Compile Include="lib\OperationFactory.php" />
+    <Compile Include="lib\Operation\AddNoise.php" />
+    <Compile Include="lib\Operation\ApplyConvolution.php" />
+    <Compile Include="lib\Operation\ApplyFilter.php" />
+    <Compile Include="lib\Operation\ApplyMask.php" />
+    <Compile Include="lib\Operation\AsGrayscale.php" />
+    <Compile Include="lib\Operation\AsNegative.php" />
+    <Compile Include="lib\Operation\AutoCrop.php" />
+    <Compile Include="lib\Operation\CopyChannelsPalette.php" />
+    <Compile Include="lib\Operation\CopyChannelsTrueColor.php" />
+    <Compile Include="lib\Operation\CorrectGamma.php" />
+    <Compile Include="lib\Operation\Crop.php" />
+    <Compile Include="lib\Operation\Flip.php" />
+    <Compile Include="lib\Operation\GetMask.php" />
+    <Compile Include="lib\Operation\Merge.php" />
+    <Compile Include="lib\Operation\Mirror.php" />
+    <Compile Include="lib\Operation\Resize.php" />
+    <Compile Include="lib\Operation\ResizeCanvas.php" />
+    <Compile Include="lib\Operation\Rotate.php" />
+    <Compile Include="lib\Operation\RoundCorners.php" />
+    <Compile Include="lib\Operation\Unsharp.php" />
+    <Compile Include="lib\PaletteImage.php" />
+    <Compile Include="lib\TrueColorImage.php" />
+    <Compile Include="lib\try.php" />
+    <Compile Include="lib\vendor\de77\BMP.php" />
+    <Compile Include="lib\vendor\de77\TGA.php" />
+    <Compile Include="lib\WideImage.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="186feed0-c60e-4d52-a17e-5bf350e22991.jpg" />
+    <Content Include="lib\fonts\COPYRIGHT.TXT" />
+    <Content Include="lib\fonts\local.conf" />
+    <Content Include="lib\fonts\README.TXT" />
+    <Content Include="lib\fonts\RELEASENOTES.TXT" />
+    <Content Include="lib\fonts\Vera.ttf" />
+    <Content Include="lib\fonts\VeraBd.ttf" />
+    <Content Include="lib\fonts\VeraBI.ttf" />
+    <Content Include="lib\fonts\VeraIt.ttf" />
+    <Content Include="lib\fonts\VeraMoBd.ttf" />
+    <Content Include="lib\fonts\VeraMoBI.ttf" />
+    <Content Include="lib\fonts\VeraMoIt.ttf" />
+    <Content Include="lib\fonts\VeraMono.ttf" />
+    <Content Include="lib\fonts\VeraSe.ttf" />
+    <Content Include="lib\fonts\VeraSeBd.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+    <Folder Include="lib\fonts\" />
+    <Folder Include="lib\Font\" />
+    <Folder Include="lib\Mapper\" />
+    <Folder Include="lib\Operation\" />
+    <Folder Include="lib\vendor\" />
+    <Folder Include="lib\vendor\de77\" />
+  </ItemGroup>
+</Project>
