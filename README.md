@@ -43,6 +43,6 @@ $image->saveToFile($newimg);<br />
 
 
 ?>
-<img src="output.jpg" />
+
 
 
